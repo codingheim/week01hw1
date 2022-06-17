@@ -19,9 +19,6 @@ public class Reply extends Timestamped {
   @Column(nullable = false)
   private Long boardId;
 
-//  @ManyToOne //어노테이션을 사용하는 곳이 기준이 되는
-//  @JoinColumn(name="Board_Id")
-//  private Board boardFK;
 
   @Column(nullable = false)
   private String username;
