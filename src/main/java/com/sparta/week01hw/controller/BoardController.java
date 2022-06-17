@@ -35,7 +35,6 @@ public class BoardController {
     );
   }
 
-
   @PutMapping("/api/boards/{id}")
   public Long updateBoard(@PathVariable Long id, @RequestBody BoardRequestDto requestDto) {
     boardService.update(id, requestDto);
