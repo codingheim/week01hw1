@@ -25,3 +25,4 @@ public class BoardService {
     return board.getId();
   }
 }
+

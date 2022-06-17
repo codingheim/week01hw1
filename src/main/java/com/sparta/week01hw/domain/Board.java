@@ -1,5 +1,6 @@
 package com.sparta.week01hw.domain;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -10,6 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor //기본생성자
 @Getter
 @Entity //테이블 연결을 위한 어노테이션
+@Builder
 public class Board extends Timestamped {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Id //기본키를 나타냄.
